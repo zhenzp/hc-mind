@@ -1,0 +1,76 @@
+/* important section */
+.hcmind-inner{position:relative;width:100%;height:100%;outline:none;}/*box-shadow:0 0 2px #000;*/
+.hcmind-inner{moz-user-select:-moz-none;-moz-user-select:none;-o-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;}
+
+/* z-index:1 */
+svg.jsmind{position:absolute;z-index:1;}
+canvas.jsmind{position:absolute;z-index:1;}
+
+/* z-index:2 */
+jmnodes{position:absolute;z-index:2;background-color:rgba(0,0,0,0);}/*background color is necessary*/
+jmnode{position:absolute;cursor:default;max-width:400px;white-space:nowrap;overflow:visible;text-overflow:ellipsis;}
+jmexpander{position:absolute;width:11px;height:11px;display:block;overflow:hidden;line-height:11px;font-size:12px;text-align:center;border-radius:6px;border-width:1px;border-style:solid;cursor:pointer;}
+
+/* default theme */
+jmnode{padding:10px;background-color:#fff;color:#333;border-radius:5px;}
+/* jmnode:hover{background-color:#ebebeb;color:#333;} */
+/* jmnode.selected{background-color:#11f;color:#fff;box-shadow:2px 2px 8px #000;} */
+jmnode.root{font-size:24px;}
+jmexpander{border-color:gray;}
+jmexpander:hover{border-color:#000;}
+
+/* tooltip */
+.tooltipCon{width: 258px;padding:8px;position: absolute;background: #fff;box-shadow: 0 0 10px #ccc;top: 50px;left: 50px;z-index: 10;}
+.tooltipCon p{width: 248px;display: unset;}
+.tooltipCon span{line-height: 30px;font-size: 12px;float: left;}
+.tooltipCon .label{width: 70px;}
+.tooltipCon .value{width: 178px;word-wrap: break-word;word-break: break-all;white-space: normal;}
+
+/* minimap */
+#minimap{width: 100px;height:60px;position: absolute;bottom:5px;left: 5px;box-shadow: 0 0 10px #ccc;}
+
+@media screen and (max-device-width: 1024px) {
+    jmnode{padding:5px;border-radius:3px;font-size:14px;}
+    jmnode.root{font-size:21px;}
+}
+
+/* hc theme */
+jmnodes.theme-hc jmnode{background-color:#D8F3BF;color:#333;}
+jmnodes.theme-hc jmnode:hover{background-color:#d0ecb6;}
+jmnodes.theme-hc jmnode.selected{background-color:#d0ecb6;}
+/* 根节点 */
+jmnodes.theme-hc jmnode.root{background-color:#B3D7FF}
+jmnodes.theme-hc jmnode.root:hover{background-color:#a4c6ec}
+jmnodes.theme-hc jmnode.root.selected{background-color:#a4c6ec}
+/* 引用绑定指标节点 */
+jmnodes.theme-hc jmnode.quoteBindIndex{background-color:#F6CFCF}
+jmnodes.theme-hc jmnode.quoteBindIndex:hover{background-color:#ecc3c3}
+jmnodes.theme-hc jmnode.quoteBindIndex.selected{background-color:#ecc3c3}
+/* 引用节点 */
+jmnodes.theme-hc jmnode.quote{background-color:#F9EACF}
+jmnodes.theme-hc jmnode.quote:hover{background-color:#e7d9be}
+jmnodes.theme-hc jmnode.quote.selected{background-color:#e7d9be}
+/* 绑定指标节点 */
+jmnodes.theme-hc jmnode.bindIndex{background-color:#BAEAE0}
+jmnodes.theme-hc jmnode.bindIndex:hover{background-color:#addbd2}
+jmnodes.theme-hc jmnode.bindIndex.selected{background-color:#addbd2}
+/* 绑定产品节点 */
+jmnodes.theme-hc jmnode.bindProd{background-color:#DEE2FF}
+jmnodes.theme-hc jmnode.bindProd:hover{background-color:#cfd3f0}
+jmnodes.theme-hc jmnode.bindProd.selected{background-color:#cfd3f0}
+/* 引用绑定指标、产品节点 */
+jmnodes.theme-hc jmnode.quoteBindIndexProd{background-color:#E8DCDC}
+jmnodes.theme-hc jmnode.quoteBindIndexProd:hover{background-color:#d8cccc}
+jmnodes.theme-hc jmnode.quoteBindIndexProd.selected{background-color:#d8cccc}
+/* 引用绑定产品节点 */
+jmnodes.theme-hc jmnode.quoteBindProd{background-color:#CBE1EA}
+jmnodes.theme-hc jmnode.quoteBindProd:hover{background-color:#bfd5dd}
+jmnodes.theme-hc jmnode.quoteBindProd.selected{background-color:#bfd5dd}
+/* 绑定指标、产品节点 */
+jmnodes.theme-hc jmnode.bindIndexProd{background-color:#EBEAD9}
+jmnodes.theme-hc jmnode.bindIndexProd:hover{background-color:#dad9c8}
+jmnodes.theme-hc jmnode.bindIndexProd.selected{background-color:#dad9c8}
+
+jmnodes.theme-hc jmexpander{}
+jmnodes.theme-hc jmexpander:hover{}
+
