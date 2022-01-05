@@ -4,13 +4,15 @@
  * @Author: zhenzipu
  * @Date: 2021-07-15 15:05:39
  * @LastEditors: zhenzipu
- * @LastEditTime: 2022-01-04 17:31:10
+ * @LastEditTime: 2022-01-05 14:59:48
 -->
 # hc-mind
 
 > 一个 Vue 组件 ( 基于 [jsmind](https://github.com/hizzgdev/jsmind ) )二次开发新增异步加载子节点、动态节点样式、
-动态节点提示框、动态菜单、拖拽回调、整图拖拽等常用功能
+动态节点提示框、动态菜单、拖拽回调、整图拖拽等常用功能 节点基础操作增删改查api请参考jsmind文档
 
+## 效果
+![example](https://github.com/zhenzp/hc-mind/blob/322ab451d4821002ad108c44b47160b98a30ee62/example.gif?raw=true)
 
 # 安装
 ```bash
@@ -202,5 +204,3 @@ https://github.com/zhenzp/hc-mind
 yarn #or npm install
 yarn run dev #or npm run dev
 ```
-## 结果
-![example](example.png)

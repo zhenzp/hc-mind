@@ -1,6 +1,6 @@
 {
   "name": "hc-mind",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "基于jsmind二次开发的可视化插件",
   "keyword": "tree graph edit",
   "private": false,
