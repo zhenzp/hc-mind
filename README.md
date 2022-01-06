@@ -4,7 +4,7 @@
  * @Author: zhenzipu
  * @Date: 2021-07-15 15:05:39
  * @LastEditors: zhenzipu
- * @LastEditTime: 2022-01-05 14:59:48
+ * @LastEditTime: 2022-01-06 15:25:19
 -->
 # hc-mind
 
@@ -201,6 +201,6 @@ dragFn: function(src, target) {
 # 使用例子
 ```bash
 https://github.com/zhenzp/hc-mind
-yarn #or npm install
-yarn run dev #or npm run dev
+yarn install # or npm install
+yarn dev #or npm run dev
 ```
